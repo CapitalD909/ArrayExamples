@@ -176,33 +176,73 @@ for (int i=0; i<ar1.length; i++){
           *    ar2[3]=3  ->  ar2odds[1]=3
           */
 System.out.println(" **Task 8 ** ");
-int a=0;
-int [] ar2odds = new int[ar2.length];
-for (int i=0; i<ar2.length; i++){
-    System.out.println(ar2[i]);
-    
-    if (i%2==1){
-        ar2odds[a]=ar2[i];
-        a++;
-    }
-}
-for (int i=0; i<a; i++){
-    
-}
+           int k=0;
+           int[] ar2odds = new int[ar2.length]; // too big right now.
+           for ( int i=0 ; i<ar2.length ; i++)
+           {
+               System.out.println(ar2[i]); // Just print it out to see
+               
+               if (i%2==1)
+               {
+                   ar2odds[k]=ar2[i];
+                   k++;
+               }
+           }
+           
+           for (int i=0 ; i<k ; i++)
+               System.out.println(ar2odds[i]);
+
          
         /*
          * Task 9. In the array ar2, count how many odd numbers you
          * have.  Then create an ew array called ar4.  Copy just the odd
          * numbers from ar1 into ar4.  Print ar4
          */
-        
+System.out.println(" **Task 9** ");
+int count=0;
+for (int i=0; i<ar2.length; i++){
+    if (ar2[i]%2==1){
+        count++;
+    }
+    
+}
+int ar4[]= new int[count];
+int odds=0;
+for (int i=0; i<ar2.length; i++){
+    if (ar2[i]%2==1){
+        ar4[odds]=ar2[i];
+        odds++;
+    }
+}
+
+for (int i=0; i<count; i++){
+    System.out.println(ar4[i]);
+}
         /*
          * Task 10.  Shift the elements of ar4 right by 1
          * For example
          * old   ar4: 1 3 5 7 9
          * new   ar4  9 1 3 5 7
          */
+System.out.println(" **Task 10** ");         System.out.println("Original ar4");
+         for (int i=0 ; i<ar4.length ; i++)
+             System.out.println(ar4[i]);
         
+         int temp10=ar4[ar4.length-1];
+         
+         for (int i=ar4.length-1 ; i>0 ; i--)
+            ar4[i]=ar4[i-1];
+         
+         ar4[0]=temp10;
+            
+         System.out.println("New ar4");
+         for (int i=0 ; i<ar4.length ; i++)
+             System.out.println(ar4[i]);
+
+    
+
+
+
         
         /*
          * Task 11.  Reverse the order of elements in ar2
