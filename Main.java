@@ -298,10 +298,17 @@ ar5[13]="a";
 ar5[14]="new";
 ar5[15]="nation";
 int[] ar6= new int[ar5.length];
+int count2=0;
 for (int i=0; i<ar5.length; i++){
-    ar6[i]=ar5.length(ar5[i]);
+    ar6[i]=ar5[i].length();
+    System.out.println(ar6[i]);
+
+    if (ar5[i].length()>5){
+        count2++;
+    }
     
 }
+      System.out.println( "There are "+count2+" words with more than 5 letters.");
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
@@ -316,7 +323,36 @@ for (int i=0; i<ar5.length; i++){
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
-        
+System.out.println(" **Task 13** ");
+String[] monsterArray = new String[5];
+monsterArray[0] = "Cookie";
+monsterArray[1] = "Grover";
+monsterArray[2] = "Oscar the Grouch";
+monsterArray[3] = "Elmo";
+monsterArray[4] = "Rosita";
+
+
+for (int i=0; i<monsterArray.length; i++){
+    System.out.println(monsterArray[i]);
+}
+    System.out.println("The names that start with vowels are ");
+for (int i=0; i<monsterArray.length; i++){
+    if (monsterArray[i].startsWith("A")){
+        System.out.println (monsterArray[i]);
+    }
+    if (monsterArray[i].startsWith("E")){
+                System.out.println (monsterArray[i]);
+    }
+    if (monsterArray[i].startsWith("I")){
+                System.out.println (monsterArray[i]);
+    }
+    if (monsterArray[i].startsWith("O")){
+                System.out.println (monsterArray[i]);
+    }
+    if (monsterArray[i].startsWith("U")){
+                System.out.println (monsterArray[i]);
+    }
+}
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
