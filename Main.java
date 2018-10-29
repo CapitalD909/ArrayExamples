@@ -368,8 +368,23 @@ for (int i=0; i<monsterArray.length; i++){
           *      So arindex[0]=2
           *         arindex[1]=5
           */
-         
+   System.out.println(" **Task 14** ");
+   int x=0;
+   int[] arindex = new int[2];
+   int [] arx = {94, 95, 96, 97, 98, 99};
+   for (int i=0; i<arx.length; i++){
+       if (arx[i]%3==0){
+           arindex[x]=i;
+           x++;
+        }
+       
+    }
+    
+    for (int i=0; i<arindex.length; i++){
+        System.out.println(arindex[i]);
+    }
          /*
+          * Task 15
           * Create an arrary called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
           * fb[0]=1
@@ -378,6 +393,10 @@ for (int i=0; i<monsterArray.length; i++){
           * fb[3]=fb[1]+fb[2]
           * fb[4]=fb[2]+fb[3]
           */
-        
+ System.out.println(" **Task 15** ");
+ int[] fb = new int[10];
+ for(int i=0; i < fb.length ; i++){
     }
 }
+}
+         
