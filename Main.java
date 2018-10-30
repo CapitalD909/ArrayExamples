@@ -332,25 +332,25 @@ monsterArray[3] = "Elmo";
 monsterArray[4] = "Rosita";
 
 
-for (int i=0; i<monsterArray.length; i++){
-    System.out.println(monsterArray[i]);
+for (String i : monsterArray){
+    System.out.println(i);
 }
     System.out.println("The names that start with vowels are ");
-for (int i=0; i<monsterArray.length; i++){
-    if (monsterArray[i].startsWith("A")){
-        System.out.println (monsterArray[i]);
+for (String i : monsterArray){
+    if (i.startsWith("A")){
+        System.out.println (i);
     }
-    if (monsterArray[i].startsWith("E")){
-                System.out.println (monsterArray[i]);
+    if (i.startsWith("E")){
+                System.out.println (i);
     }
-    if (monsterArray[i].startsWith("I")){
-                System.out.println (monsterArray[i]);
+    if (i.startsWith("I")){
+                System.out.println (i);
     }
-    if (monsterArray[i].startsWith("O")){
-                System.out.println (monsterArray[i]);
+    if (i.startsWith("O")){
+                System.out.println (i);
     }
-    if (monsterArray[i].startsWith("U")){
-                System.out.println (monsterArray[i]);
+    if (i.startsWith("U")){
+                System.out.println (i);
     }
 }
          /*
